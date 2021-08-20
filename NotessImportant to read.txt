@@ -1,0 +1,2 @@
+Donot forget to add responsivity of the page.
+Fix header not being accessible because of header-bottom.
