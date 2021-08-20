@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: white;
+}
+p {
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+}
+body {
+  min-height: 100vh;
+}
+header {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+
+  /*when setting a background image, use background-image -size and position*/
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/186099b9-224e-44a4-9712-c5fbd37f1ac4/1c985ec4-533c-445d-8ecc-0283fe3ac893/US-en-20210817-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  background-size: cover;
+  background-position: center; /*Background image and when using a normal image, use img in html*/
+  /*No need to add position absolute and 0 bottom because it's already
+ below the html logic and it will just mess things up*/
+}
+
+#header-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  background-image: linear-gradient(to top, transparent, black);
+}
+.header-bottom {
+  position: absolute; /*To ue position absolute, the parent div 
+  must have a position relative*/
+  bottom: 0px;
+  height: 150%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent, black);
+  opacity: 0.5;
+}
+
+#nextflix-log {
+  height: 100%;
+  width: 150px;
+}
+
+#settings {
+  height: 100%;
+  width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.netflix-img {
+  object-fit: cover; /*Img is forced to cover the container without
+       changing aspect ration, super great*/
+  width: 100%;
+  height: 100%; /*do auto if you want the image not grwo */
+}
+.drop-down {
+  width: 90px;
+  color: white;
+  background-color: black;
+  margin-right: 20px;
+  height: 30px;
+}
+#btn {
+  width: 70px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+}
+.txt-container {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#txt-title {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  width: 50%;
+
+  margin-top: -150px; /*Moves adds martgin in  negative direction*/
+}
+#txtbox-container {
+  height: 10%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.txt-box-container {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.txtbox {
+  height: inherit;
+  width: 70%;
+}
+.btn-2 {
+  height: inherit;
+  width: 30%;
+  background-color: red;
+}
+main {
+  background-color: black;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: repeat(4, 500px), 1fr;
+  grid-template-columns: 1fr;
+}
+.one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: gray solid 10px;
+}
+
+.txt {
+  color: white;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-img {
+  width: 50%;
+  height: 80%;
+}
+
+.tv-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.two {
+  border-top: rgb(29, 29, 29) solid 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.three {
+  border-top: rgb(29, 29, 29) solid 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.four {
+  border-top: rgb(29, 29, 29) solid 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.five {
+  border-top: rgb(29, 29, 29) solid 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#drop-dows {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.faq-tlt {
+  margin-top: 20px;
+}
+.faq {
+  height: 55px;
+  width: 60vw;
+  background-color: rgb(48, 48, 48);
+  margin-top: 5px;
+}
+.faq-mini-tlt {
+  font-size: 20px;
+}
+.faq:hover {
+  /*We want an onclick here but for now let's do hover*/
+  height: 250px;
+}
+
+footer {
+  /*No need to add position absolute and 0 bottom because it's already
+ below the html logic and it will just mess things up*/
+  color: white;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  border-top: rgb(29, 29, 29) solid 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-footer {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: row; /*AGain, not necessary, it comes in automatically*/
+  justify-content: space-around;
+  align-items: center;
+}
+h3 {
+  margin-top: 20px;
+  margin-left: 30px;
+  color: rgb(117, 117, 117);
+  font-size: 20px;
+}
+.pillar {
+  height: 120px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.drop-down-2 {
+  width: 90px;
+  color: rgb(117, 117, 117);
+  background-color: black;
+  margin-right: 20px;
+  height: 40px;
+  margin-left: 50px;
+}
