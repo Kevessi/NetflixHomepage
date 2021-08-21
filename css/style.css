@@ -30,8 +30,8 @@ header {
   background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/186099b9-224e-44a4-9712-c5fbd37f1ac4/1c985ec4-533c-445d-8ecc-0283fe3ac893/US-en-20210817-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   background-size: cover;
   background-position: center; /*Background image and when using a normal image, use img in html*/
-  /*No need to add position absolute and 0 bottom because it's already
- below the html logic and it will just mess things up*/
+  /*No need to add position absolute and 0 bottom because it's already there
+*/
 }
 
 #header-header {
@@ -98,8 +98,7 @@ header {
   justify-content: center;
   height: 20%;
   width: 400px;
-
-  margin-top: -150px; /*Moves adds martgin in  negative direction*/
+  margin-top: -150px; /*Moves margin in  negative direction*/
 }
 #txtbox-container {
   height: 10%;
@@ -212,7 +211,7 @@ main {
 
 footer {
   /*No need to add position absolute and 0 bottom because it's already
- below the html logic and it will just mess things up*/
+ */
   color: white;
   height: 300px;
   width: 100%;
